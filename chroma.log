@@ -269,3 +269,45 @@
 [36mDEBUG[0m:    [02-04-2025 01:45:41] Stopping component OpenTelemetryClient
 [32mINFO[0m:     [02-04-2025 01:45:41] Application shutdown complete.
 [32mINFO[0m:     [02-04-2025 01:45:41] Finished server process [[36m22036[0m]
+[33mWARNING[0m:  [04-04-2025 02:21:42] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-04-2025 02:21:42] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component System
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component SqliteDB
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component Posthog
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component LocalExecutor
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component SegmentAPI
+[36mDEBUG[0m:    [04-04-2025 02:21:42] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [04-04-2025 02:21:42] Started server process [[36m20756[0m]
+[32mINFO[0m:     [04-04-2025 02:21:42] Waiting for application startup.
+[32mINFO[0m:     [04-04-2025 02:21:42] Application startup complete.
+[32mINFO[0m:     [04-04-2025 02:21:42] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-04-2025 02:25:08] ::1:53791 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 02:25:08] ::1:53792 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 02:25:08] ::1:53792 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 02:25:25] ::1:53802 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [04-04-2025 02:25:25] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-04-2025 02:25:25] ::1:53802 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 02:27:03] ::1:54160 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 02:27:03] ::1:54162 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 02:27:03] ::1:54162 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 02:27:03] ::1:54160 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 02:27:03] ::1:54160 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [04-04-2025 03:52:39] Shutting down
+[32mINFO[0m:     [04-04-2025 03:52:39] Waiting for application shutdown.
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component System
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component SegmentAPI
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component LocalExecutor
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component Posthog
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component SqliteDB
+[36mDEBUG[0m:    [04-04-2025 03:52:39] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [04-04-2025 03:52:39] Application shutdown complete.
+[32mINFO[0m:     [04-04-2025 03:52:39] Finished server process [[36m20756[0m]
