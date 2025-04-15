@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+chromadb
+langchain
+langchain-groq
+arabic-reshaper
+groq
