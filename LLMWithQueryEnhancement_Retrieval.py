@@ -100,6 +100,7 @@ def main():
         if user_question:
             # Enhance the query first to check if it is food-related
             query_enhancement_result = enhance_query_with_groq(user_question)
+            print("Query Enhancement Result:", query_enhancement_result)
 
             if query_enhancement_result == "not food related":
                 # If the query is not food-related, skip retrieval
