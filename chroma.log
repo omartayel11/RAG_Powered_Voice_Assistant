@@ -603,3 +603,25 @@
 [36mDEBUG[0m:    [16-04-2025 03:53:24] Stopping component OpenTelemetryClient
 [32mINFO[0m:     [16-04-2025 03:53:24] Application shutdown complete.
 [32mINFO[0m:     [16-04-2025 03:53:24] Finished server process [[36m18220[0m]
+[33mWARNING[0m:  [16-04-2025 15:24:10] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [16-04-2025 15:24:11] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component System
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component SqliteDB
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component Posthog
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component LocalExecutor
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component SegmentAPI
+[36mDEBUG[0m:    [16-04-2025 15:24:11] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [16-04-2025 15:24:11] Started server process [[36m19892[0m]
+[32mINFO[0m:     [16-04-2025 15:24:11] Waiting for application startup.
+[32mINFO[0m:     [16-04-2025 15:24:11] Application startup complete.
+[32mINFO[0m:     [16-04-2025 15:24:11] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [16-04-2025 15:27:41] ::1:62246 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 15:27:42] ::1:62248 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 15:27:42] ::1:62248 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 15:28:08] ::1:62262 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [16-04-2025 15:28:08] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [16-04-2025 15:28:08] ::1:62262 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
