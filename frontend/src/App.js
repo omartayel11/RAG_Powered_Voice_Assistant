@@ -10,6 +10,12 @@ function App() {
 
   const messageListRef = useRef(null);
 
+  const [userInfoRequested, setUserInfoRequested] = useState(false);
+  const [name, setName] = useState("");
+  const [gender, setGender] = useState("male");
+  const [profession, setProfession] = useState("");
+
+
   useEffect(() => {
     const socket = new WebSocket("ws://localhost:8001/ws/chat");
     socket.onopen = () => console.log("🟢 WebSocket connected.");
@@ -18,6 +24,11 @@ function App() {
 
     socket.onmessage = (event) => {
       const data = JSON.parse(event.data);
+
+      if (data.type === "collect_user_info") {
+        setUserInfoRequested(true);
+        return;
+      }
 
       if (data.type === "suggestions") {
         setSuggestions(data.suggestions);
@@ -50,6 +61,20 @@ function App() {
     setInput("");
   };
 
+  const submitUserInfo = () => {
+    if (!name.trim() || !gender) return;
+  
+    const userData = {
+      name: name.trim(),
+      gender: gender.trim().toLowerCase(),
+      profession: profession.trim() || null,
+    };
+  
+    ws.send(JSON.stringify(userData));
+    setUserInfoRequested(false);
+  };
+  
+
   const handleSuggestionClick = (index) => {
     if (!ws) return;
 
@@ -65,6 +90,34 @@ function App() {
   const handleKeyDown = (e) => {
     if (e.key === "Enter") sendMessage();
   };
+
+  if (userInfoRequested) {
+    return (
+      <div className="App">
+        <h2>👋 Welcome! Tell us about yourself</h2>
+        <div className="form">
+          <input
+            type="text"
+            placeholder="Your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <select value={gender} onChange={(e) => setGender(e.target.value)}>
+            <option value="male">Male (ذكر)</option>
+            <option value="female">Female (أنثى)</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Profession (optional)"
+            value={profession}
+            onChange={(e) => setProfession(e.target.value)}
+          />
+          <button onClick={submitUserInfo}>Start Chat</button>
+        </div>
+      </div>
+    );
+  }
+  
 
   return (
     <div className="App">

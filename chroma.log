@@ -625,3 +625,28 @@
 [32mINFO[0m:     [16-04-2025 15:28:08] ::1:62262 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
 [36mDEBUG[0m:    [16-04-2025 15:28:08] Starting component PersistentLocalHnswSegment
 [32mINFO[0m:     [16-04-2025 15:28:08] ::1:62262 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:42:23] ::1:63545 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:42:24] ::1:63546 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:42:24] ::1:63546 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:42:44] ::1:63557 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:42:45] ::1:63557 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:44:49] ::1:63614 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:44:50] ::1:63615 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:44:50] ::1:63615 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:44:50] ::1:63614 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 16:44:50] ::1:63614 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [16-04-2025 18:10:18] Shutting down
+[32mINFO[0m:     [16-04-2025 18:10:18] Waiting for application shutdown.
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component System
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component SegmentAPI
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component LocalExecutor
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component Posthog
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component SqliteDB
+[36mDEBUG[0m:    [16-04-2025 18:10:18] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [16-04-2025 18:10:18] Application shutdown complete.
+[32mINFO[0m:     [16-04-2025 18:10:18] Finished server process [[36m19892[0m]
