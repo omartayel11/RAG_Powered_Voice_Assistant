@@ -771,3 +771,466 @@
 [32mINFO[0m:     [19-04-2025 01:45:07] ::1:60991 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
 [36mDEBUG[0m:    [19-04-2025 01:45:07] Starting component PersistentLocalHnswSegment
 [32mINFO[0m:     [19-04-2025 01:45:07] ::1:60991 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [19-04-2025 02:44:50] Shutting down
+[32mINFO[0m:     [19-04-2025 02:44:50] Waiting for application shutdown.
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component System
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component SegmentAPI
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component LocalExecutor
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component Posthog
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component SqliteDB
+[36mDEBUG[0m:    [19-04-2025 02:44:50] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [19-04-2025 02:44:50] Application shutdown complete.
+[32mINFO[0m:     [19-04-2025 02:44:50] Finished server process [[36m26748[0m]
+[33mWARNING[0m:  [20-04-2025 19:16:10] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [20-04-2025 19:16:11] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component System
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component SqliteDB
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component Posthog
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component LocalExecutor
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component SegmentAPI
+[36mDEBUG[0m:    [20-04-2025 19:16:11] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [20-04-2025 19:16:11] Started server process [[36m26852[0m]
+[32mINFO[0m:     [20-04-2025 19:16:11] Waiting for application startup.
+[32mINFO[0m:     [20-04-2025 19:16:11] Application startup complete.
+[32mINFO[0m:     [20-04-2025 19:16:11] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [20-04-2025 19:17:49] ::1:50188 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:50] ::1:50189 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:50] ::1:50189 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-04-2025 19:17:50] Collection recipestest already exists, returning existing collection.
+[32mINFO[0m:     [20-04-2025 19:17:50] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:51] ::1:50188 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [20-04-2025 19:17:51] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [20-04-2025 19:17:51] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:51] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:51] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:51] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:51] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:51] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:51] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:52] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:52] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:52] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:52] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:52] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:52] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:52] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:53] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:53] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:53] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:53] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:53] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:53] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:53] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:54] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:54] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:54] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:54] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:54] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:54] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:54] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:55] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:55] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:55] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:55] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:55] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:55] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:55] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:55] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:56] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:56] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:56] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:56] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:56] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:56] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:56] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:56] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:57] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:57] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:57] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:57] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:57] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:57] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:57] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:58] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:58] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:58] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:17:58] ::1:50188 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:18:58] ::1:50224 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:18:58] ::1:50225 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:18:58] ::1:50225 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:18:58] ::1:50224 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:18:58] ::1:50224 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:20:16] ::1:50265 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:20:16] ::1:50266 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:20:16] ::1:50266 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:20:16] ::1:50265 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:20:16] ::1:50265 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:22:09] ::1:50317 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:22:10] ::1:50318 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:22:10] ::1:50318 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:22:10] ::1:50317 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:22:10] ::1:50317 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:24:07] ::1:50373 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:24:07] ::1:50374 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:24:07] ::1:50374 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:24:07] ::1:50373 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:24:07] ::1:50373 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:25:21] ::1:50409 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:25:22] ::1:50411 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:25:22] ::1:50411 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:25:22] ::1:50409 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:25:22] ::1:50409 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:43:53] ::1:50967 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:43:54] ::1:50968 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:43:54] ::1:50968 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:43:54] ::1:50967 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:43:54] ::1:50967 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:46:15] ::1:51113 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:46:15] ::1:51114 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:46:15] ::1:51114 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:46:15] ::1:51113 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:46:15] ::1:51113 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:47:31] ::1:51149 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:47:31] ::1:51150 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:47:31] ::1:51150 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:47:31] ::1:51149 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:47:31] ::1:51149 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 19:54:31] Shutting down
+[32mINFO[0m:     [20-04-2025 19:54:31] Waiting for application shutdown.
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component System
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component SegmentAPI
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component LocalExecutor
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component Posthog
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component SqliteDB
+[36mDEBUG[0m:    [20-04-2025 19:54:31] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [20-04-2025 19:54:31] Application shutdown complete.
+[32mINFO[0m:     [20-04-2025 19:54:31] Finished server process [[36m26852[0m]
+[33mWARNING[0m:  [20-04-2025 20:47:09] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [20-04-2025 20:47:10] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component System
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component SqliteDB
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component Posthog
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component LocalExecutor
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component SegmentAPI
+[36mDEBUG[0m:    [20-04-2025 20:47:10] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [20-04-2025 20:47:10] Started server process [[36m30396[0m]
+[32mINFO[0m:     [20-04-2025 20:47:10] Waiting for application startup.
+[32mINFO[0m:     [20-04-2025 20:47:10] Application startup complete.
+[32mINFO[0m:     [20-04-2025 20:47:10] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [20-04-2025 20:48:39] ::1:51976 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:48:39] ::1:51977 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:48:39] ::1:51977 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:48:39] ::1:51976 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:50:12] ::1:52020 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:50:12] ::1:52021 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:50:12] ::1:52021 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:50:12] ::1:52020 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:50:12] ::1:52020 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/get HTTP/1.1" 200
+[36mDEBUG[0m:    [20-04-2025 20:50:12] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [20-04-2025 20:50:13] ::1:52020 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/delete HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:00] ::1:52052 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:00] ::1:52053 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:00] ::1:52053 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-04-2025 20:51:00] Collection recipestest already exists, returning existing collection.
+[32mINFO[0m:     [20-04-2025 20:51:00] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:01] ::1:52052 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:01] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:01] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:01] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:01] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:02] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:02] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:02] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:02] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:02] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:03] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:03] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:03] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:03] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:04] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:04] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:04] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:04] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:05] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:05] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:05] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:05] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:05] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:05] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:06] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:06] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:06] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:06] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:07] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:07] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:07] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:07] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:08] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:08] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:08] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:08] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:08] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:08] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:09] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:09] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:09] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:09] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:09] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:10] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:10] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:10] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:10] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:10] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:11] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:11] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:11] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:11] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:11] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:12] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:12] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:51:12] ::1:52052 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:54:09] ::1:52131 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:54:09] ::1:52132 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:54:09] ::1:52132 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:54:09] ::1:52131 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:54:09] ::1:52131 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/get HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:54:09] ::1:52131 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/delete HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:21] ::1:52222 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:21] ::1:52223 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:21] ::1:52223 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-04-2025 20:57:21] Collection recipestest already exists, returning existing collection.
+[32mINFO[0m:     [20-04-2025 20:57:21] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:22] ::1:52222 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:22] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:22] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:22] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:22] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:22] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:23] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:23] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:23] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:23] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:23] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:24] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:24] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:24] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:24] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:25] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:25] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:25] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:25] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:26] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:26] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:26] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:26] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:26] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:27] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:27] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:27] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:27] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:27] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:28] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:28] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:28] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:28] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:28] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:29] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:29] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:29] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:29] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:29] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:30] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:30] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:30] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:30] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:30] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:30] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:31] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:31] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:31] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:31] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:32] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:32] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:32] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:32] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:33] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:33] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:57:33] ::1:52222 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/upsert HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:58:18] ::1:52251 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:58:19] ::1:52252 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:58:19] ::1:52252 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:58:19] ::1:52251 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 20:58:19] ::1:52251 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [20-04-2025 22:23:00] Shutting down
+[32mINFO[0m:     [20-04-2025 22:23:00] Waiting for application shutdown.
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component System
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component SegmentAPI
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component LocalExecutor
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component Posthog
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component SqliteDB
+[36mDEBUG[0m:    [20-04-2025 22:23:00] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [20-04-2025 22:23:00] Application shutdown complete.
+[32mINFO[0m:     [20-04-2025 22:23:00] Finished server process [[36m30396[0m]
+[33mWARNING[0m:  [21-04-2025 20:49:36] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [21-04-2025 20:49:37] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component System
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component SqliteDB
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component Posthog
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component LocalExecutor
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component SegmentAPI
+[36mDEBUG[0m:    [21-04-2025 20:49:37] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [21-04-2025 20:49:37] Started server process [[36m29868[0m]
+[32mINFO[0m:     [21-04-2025 20:49:37] Waiting for application startup.
+[32mINFO[0m:     [21-04-2025 20:49:37] Application startup complete.
+[32mINFO[0m:     [21-04-2025 20:49:37] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [21-04-2025 20:58:38] ::1:58334 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [21-04-2025 20:58:39] ::1:58335 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [21-04-2025 20:58:39] ::1:58335 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [21-04-2025 20:58:58] ::1:58346 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [21-04-2025 21:15:59] ::1:58938 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [21-04-2025 21:15:59] ::1:58939 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [21-04-2025 21:15:59] ::1:58939 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [21-04-2025 21:16:08] ::1:58944 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [21-04-2025 21:16:09] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [21-04-2025 21:16:09] ::1:58944 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [21-04-2025 21:17:23] Shutting down
+[32mINFO[0m:     [21-04-2025 21:17:23] Waiting for application shutdown.
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component System
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component SegmentAPI
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component LocalExecutor
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component Posthog
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component SqliteDB
+[36mDEBUG[0m:    [21-04-2025 21:17:23] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [21-04-2025 21:17:23] Application shutdown complete.
+[32mINFO[0m:     [21-04-2025 21:17:23] Finished server process [[36m29868[0m]
+[33mWARNING[0m:  [22-04-2025 02:46:11] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [22-04-2025 02:46:11] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component System
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component SqliteDB
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component Posthog
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component LocalExecutor
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component SegmentAPI
+[36mDEBUG[0m:    [22-04-2025 02:46:11] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [22-04-2025 02:46:11] Started server process [[36m27156[0m]
+[32mINFO[0m:     [22-04-2025 02:46:11] Waiting for application startup.
+[32mINFO[0m:     [22-04-2025 02:46:11] Application startup complete.
+[32mINFO[0m:     [22-04-2025 02:46:11] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [22-04-2025 02:47:22] ::1:59593 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:47:22] ::1:59594 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:47:22] ::1:59594 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:47:31] ::1:59601 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [22-04-2025 02:47:31] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [22-04-2025 02:47:31] ::1:59601 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:57:10] ::1:60006 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:57:11] ::1:60007 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:57:11] ::1:60007 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:57:26] ::1:60016 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:57:27] ::1:60016 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:58:59] ::1:60055 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:58:59] ::1:60056 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:58:59] ::1:60056 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:58:59] ::1:60055 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 02:58:59] ::1:60055 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 03:01:12] Shutting down
+[32mINFO[0m:     [22-04-2025 03:01:12] Waiting for application shutdown.
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component System
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component SegmentAPI
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component LocalExecutor
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component Posthog
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component SqliteDB
+[36mDEBUG[0m:    [22-04-2025 03:01:12] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [22-04-2025 03:01:12] Application shutdown complete.
+[32mINFO[0m:     [22-04-2025 03:01:12] Finished server process [[36m27156[0m]
+[33mWARNING[0m:  [22-04-2025 04:18:22] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [22-04-2025 04:18:23] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component System
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component SqliteDB
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component Posthog
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component LocalExecutor
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component SegmentAPI
+[36mDEBUG[0m:    [22-04-2025 04:18:23] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [22-04-2025 04:18:23] Started server process [[36m15692[0m]
+[32mINFO[0m:     [22-04-2025 04:18:23] Waiting for application startup.
+[32mINFO[0m:     [22-04-2025 04:18:23] Application startup complete.
+[32mINFO[0m:     [22-04-2025 04:18:23] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [22-04-2025 04:20:56] ::1:62136 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:20:57] ::1:62137 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:20:57] ::1:62137 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:21:07] ::1:62144 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [22-04-2025 04:21:07] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [22-04-2025 04:21:07] ::1:62144 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:23:43] ::1:62218 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:23:43] ::1:62219 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:23:43] ::1:62219 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:23:43] ::1:62218 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:23:43] ::1:62218 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:25:50] ::1:62271 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:25:51] ::1:62273 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:25:51] ::1:62273 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:25:51] ::1:62271 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:25:51] ::1:62271 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:29:55] ::1:62377 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:29:55] ::1:62378 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:29:55] ::1:62378 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:29:56] ::1:62377 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:29:56] ::1:62377 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [22-04-2025 04:32:02] Shutting down
+[32mINFO[0m:     [22-04-2025 04:32:02] Waiting for application shutdown.
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component System
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component SegmentAPI
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component LocalExecutor
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component Posthog
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component SqliteDB
+[36mDEBUG[0m:    [22-04-2025 04:32:02] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [22-04-2025 04:32:02] Application shutdown complete.
+[32mINFO[0m:     [22-04-2025 04:32:02] Finished server process [[36m15692[0m]

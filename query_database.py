@@ -31,4 +31,4 @@ def search_recipe(query_text):
         print(arabic_reshaper.reshape(result[0])[::-1])
 
 # Example search query
-search_recipe("شوربة مغربية")
+search_recipe("مقبلات ")

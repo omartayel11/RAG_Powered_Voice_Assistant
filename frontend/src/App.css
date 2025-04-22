@@ -105,3 +105,23 @@ button {
 .form button:hover {
   background-color: #9ccc65;
 }
+
+
+.choice-hint {
+  margin: 10px 0;
+  color: #555;
+  font-weight: bold;
+  text-align: center;
+}
+.suggestions button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.suggestions button:hover {
+  background-color: #e0e0e0;
+}

@@ -15,9 +15,9 @@ function App() {
   const [gender, setGender] = useState("male");
   const [profession, setProfession] = useState("");
 
-
   useEffect(() => {
     const socket = new WebSocket("ws://localhost:8001/ws/chat");
+
     socket.onopen = () => console.log("🟢 WebSocket connected.");
     socket.onclose = () => console.log("🔴 WebSocket disconnected.");
     socket.onerror = (error) => console.error("WebSocket error:", error);
@@ -33,7 +33,10 @@ function App() {
       if (data.type === "suggestions") {
         setSuggestions(data.suggestions);
         setExpectingChoice(true);
-        setMessages((prev) => [...prev, { sender: "bot", text: data.message }]);
+        setMessages((prev) => [
+          ...prev,
+          { sender: "bot", text: data.message || "اختر وصفة من الخيارات التالية:" }
+        ]);
       } else if (data.type === "response") {
         setMessages((prev) => [...prev, { sender: "bot", text: data.message }]);
         setExpectingChoice(false);
@@ -49,7 +52,7 @@ function App() {
 
   useEffect(() => {
     messageListRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [messages, suggestions]);
 
   const sendMessage = () => {
     if (!input.trim() || !ws) return;
@@ -63,26 +66,24 @@ function App() {
 
   const submitUserInfo = () => {
     if (!name.trim() || !gender) return;
-  
+
     const userData = {
       name: name.trim(),
       gender: gender.trim().toLowerCase(),
       profession: profession.trim() || null,
     };
-  
+
     ws.send(JSON.stringify(userData));
     setUserInfoRequested(false);
   };
-  
 
   const handleSuggestionClick = (index) => {
     if (!ws) return;
 
-    // Add visual confirmation of user's selection
     const selected = `${index + 1}. ${suggestions[index]}`;
     setMessages((prev) => [...prev, { sender: "user", text: selected }]);
 
-    ws.send(String(index));
+    ws.send(String(index + 1)); // send as 1-based index
     setExpectingChoice(false);
     setSuggestions([]);
   };
@@ -94,34 +95,33 @@ function App() {
   if (userInfoRequested) {
     return (
       <div className="App">
-        <h2>👋 Welcome! Tell us about yourself</h2>
+        <h2>👋 أهلاً بيك! عرفنا عليك</h2>
         <div className="form">
           <input
             type="text"
-            placeholder="Your name"
+            placeholder="اسمك"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <select value={gender} onChange={(e) => setGender(e.target.value)}>
-            <option value="male">Male (ذكر)</option>
-            <option value="female">Female (أنثى)</option>
+            <option value="male">ذكر</option>
+            <option value="female">أنثى</option>
           </select>
           <input
             type="text"
-            placeholder="Profession (optional)"
+            placeholder="المهنة (اختياري)"
             value={profession}
             onChange={(e) => setProfession(e.target.value)}
           />
-          <button onClick={submitUserInfo}>Start Chat</button>
+          <button onClick={submitUserInfo}>ابدأ المحادثة</button>
         </div>
       </div>
     );
   }
-  
 
   return (
     <div className="App">
-      <h1>🍽️ Arabic Food Chatbot</h1>
+      <h1>🍽️ روبوت الوصفات العربي</h1>
 
       <div className="chat-container">
         {messages.map((msg, idx) => (
@@ -130,14 +130,17 @@ function App() {
           </div>
         ))}
 
-        {expectingChoice && suggestions.length > 0 && (
-          <div className="suggestions">
-            {suggestions.map((item, idx) => (
-              <button key={idx} onClick={() => handleSuggestionClick(idx)}>
-                {idx + 1}. {item}
-              </button>
-            ))}
-          </div>
+        {expectingChoice && (
+          <>
+            <div className="choice-hint">⬇️ من فضلك اختر وصفة من الاختيارات 👇</div>
+            <div className="suggestions">
+              {suggestions.map((item, idx) => (
+                <button key={idx} onClick={() => handleSuggestionClick(idx)}>
+                  {idx + 1}. {item}
+                </button>
+              ))}
+            </div>
+          </>
         )}
 
         <div ref={messageListRef}></div>
@@ -146,12 +149,15 @@ function App() {
       <div className="input-container">
         <input
           type="text"
-          placeholder="اكتب رسالتك..."
+          placeholder={expectingChoice ? "بانتظار اختيارك..." : "اكتب رسالتك..."}
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
+          disabled={expectingChoice}
         />
-        <button onClick={sendMessage}>إرسال</button>
+        <button onClick={sendMessage} disabled={expectingChoice}>
+          إرسال
+        </button>
       </div>
     </div>
   );

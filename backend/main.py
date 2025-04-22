@@ -23,7 +23,6 @@
 #     response = run_chatbot(user_question)
 #     return {"response": response}
 
-
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from myChatBot import WebSocketBotSession
@@ -32,25 +31,26 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change to your frontend domain in production
+    allow_origins=["*"],  # In production, set your frontend domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-sessions = {}
+sessions = {}  # Optional: session management for multi-user apps
 
 @app.websocket("/ws/chat")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     print("🟢 WebSocket connection established.")
+    
     session = WebSocketBotSession()
 
     try:
-        # 👇 Step 1: Collect user info once at the start
+        # Step 1: Ask for user info once at the beginning
         await websocket.send_json({
             "type": "collect_user_info",
-            "message": "Let's get to know you! Please provide your name, gender (male/female), and profession (optional).",
+            "message": "أهلاً! قبل ما نبدأ، من فضلك اديني اسمك، النوع (ذكر أو أنثى)، والمهنة (اختياري).",
             "fields": ["name", "gender", "profession"]
         })
 
@@ -59,34 +59,32 @@ async def websocket_endpoint(websocket: WebSocket):
 
         name = user_info.get("name", "").strip()
         gender = user_info.get("gender", "").strip().lower()
-        profession = user_info.get("profession", None)
+        profession = user_info.get("profession", "").strip() or None
 
-        # Optional field handling
-        profession = profession.strip() if profession else None
-
-        # 👇 Step 2: Inject into chatbot
         session.set_user_info(name, gender, profession)
 
-        # 👇 Step 3: Start main chat loop
+        # Step 2: Main chat loop
         while True:
             user_message = await websocket.receive_text()
             print(f"\n📨 Incoming WebSocket message: {user_message}")
 
             if session.expecting_choice:
+                # Expecting a number for recipe choice
                 try:
-                    selected_index = int(user_message.strip())
+                    selected_index = int(user_message.strip()) - 1  # User sees 1-based index
                     result = await session.handle_choice(selected_index)
-                except ValueError:
-                    print("❌ Received non-numeric input while expecting a choice.")
+                except (ValueError, IndexError):
+                    print("❌ Invalid choice input.")
                     result = {
                         "type": "error",
-                        "message": "من فضلك اختر رقم صحيح من القائمة."
+                        "message": "من فضلك اختر رقم من الاختيارات الموجودة."
                     }
             else:
+                # Normal user input
                 result = await session.handle_message(user_message)
 
             await websocket.send_json(result)
-            print("📤 Sent response to frontend.\n")
+            print("📤 Response sent to frontend.\n")
 
     except WebSocketDisconnect:
         print("🔴 WebSocket disconnected.")
