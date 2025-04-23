@@ -316,7 +316,7 @@ def select_suggestion_from_list(suggestions_string: str) -> list:
 
 class WebSocketBotSession:
     def __init__(self):
-        self.memory = ConversationBufferWindowMemory(k=5, memory_key="chat_history", return_messages=True)
+        self.memory = ConversationBufferWindowMemory(k=10, memory_key="chat_history", return_messages=True)
         self.expecting_choice = False
         self.suggestions = []
         self.original_question = ""
@@ -364,11 +364,15 @@ class WebSocketBotSession:
 # Be smart, be warm, and always bring it back to food.
 # """
 
-    def set_user_info(self, name: str, gender: str, profession: str = None):
-         self.user_name = name
-         self.user_gender = gender
-         self.user_profession = profession
-         self._update_system_prompt()
+    def set_user_info(self, name: str, gender: str, profession: str = None, likes: list = None, dislikes: list = None, allergies: list = None,):
+        self.user_name = name
+        self.user_gender = gender
+        self.user_profession = profession
+        self.user_likes = likes or []
+        self.user_dislikes = dislikes or []
+        self.user_allergies = allergies or []
+        self._update_system_prompt()
+
 
     def _update_system_prompt(self):
     
@@ -382,6 +386,10 @@ class WebSocketBotSession:
                 title = self.user_profession
         else:
             title = "أستاذ" if self.user_gender == "male" else "أستاذة"
+        
+        likes_str = "، ".join(self.user_likes) if self.user_likes else "لا يوجد"
+        dislikes_str = "، ".join(self.user_dislikes) if self.user_dislikes else "لا يوجد"
+        allergies_str = "، ".join(self.user_allergies) if self.user_allergies else "لا يوجد"
 
     
 #         greeting = f"The user you are chatting with is: {title} {self.user_name}.\n" \
@@ -395,11 +403,11 @@ class WebSocketBotSession:
 يجب أن تناديه بشكل طبيعي بلقبه أو باسمه في بداية المحادثة أو في لحظات مناسبة فقط، دون الإكثار أو التكرار غير الطبيعي.
 
 هذا هو ملخص معلومات المستخدم:
-  "likes": ["الفراخ"],
-  "dislikes": ["الأكل الحار"],
-  "allergies": ["بصل"],
-  "personality": "ودود ومتردد في البداية"
+  "الأكلات المفضلة": {likes_str}
+  "الأكلات غير المفضلة": {dislikes_str}
+  "الحساسيات الغذائية": {allergies_str}
 يجب أن تأخذ هذه المعلومات في الاعتبار عند اقتراح الوصفات أو الأكلات و عند التفاعل مع المستخدم.
+يجب التشديد على الحساسيات الغذائية، حيث يجب تجنب أي مكونات أو أكلات تحتوي على مكونات تسبب حساسية للمستخدم.
 
 معلومة عن الألقاب:
 إذا كان المستخدم مهندسًا (مثال: مهندس أو مهندسة)، من الشائع في اللهجة المصرية مناداته بـ "بشمهندس" أو "يا هندسة" بطريقة ودودة. 

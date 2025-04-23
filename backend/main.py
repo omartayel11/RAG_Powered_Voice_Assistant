@@ -24,6 +24,8 @@
 #     return {"response": response}
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import Request, HTTPException
+from utils import create_user, get_user_by_email, hash_password, verify_password
 from fastapi.middleware.cors import CORSMiddleware
 from myChatBot import WebSocketBotSession
 
@@ -39,49 +41,131 @@ app.add_middleware(
 
 sessions = {}  # Optional: session management for multi-user apps
 
+@app.post("/signup")
+async def signup(request: Request):
+    data = await request.json()
+
+    # Check required fields only
+    required_fields = ["email", "password", "gender"]
+    for field in required_fields:
+        if not data.get(field):
+            raise HTTPException(status_code=400, detail=f"Missing required field: {field}")
+
+    # Optional fields with defaults
+    optional_fields = {
+        "name": "",
+        "profession": "",
+        "allergies": [],
+        "likes": [],
+        "dislikes": []
+    }
+
+    for key, default in optional_fields.items():
+        data[key] = data.get(key, default)
+
+    existing_user = await get_user_by_email(data["email"])
+    if existing_user:
+        raise HTTPException(status_code=409, detail="Email already registered")
+
+    user_id = await create_user(data)
+    return {"message": "User created successfully", "user_id": user_id}
+
+@app.post("/login")
+async def login(request: Request):
+    data = await request.json()
+
+    email = data.get("email")
+    password = data.get("password")
+
+    if not email or not password:
+        raise HTTPException(status_code=400, detail="Email and password are required.")
+
+    user = await get_user_by_email(email)
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid email or password.")
+
+    if not verify_password(password, user["password"]):
+        raise HTTPException(status_code=401, detail="Invalid email or password.")
+
+    return {
+        "message": "Login successful",
+        "email": user["email"]
+    }
+
 @app.websocket("/ws/chat")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     print("🟢 WebSocket connection established.")
-    
+
     session = WebSocketBotSession()
 
     try:
-        # Step 1: Ask for user info once at the beginning
+        # Step 1: Wait for email (identifier)
         await websocket.send_json({
-            "type": "collect_user_info",
-            "message": "أهلاً! قبل ما نبدأ، من فضلك اديني اسمك، النوع (ذكر أو أنثى)، والمهنة (اختياري).",
-            "fields": ["name", "gender", "profession"]
+            "type": "auth_request",
+            "message": "من فضلك ادخل البريد الإلكتروني لتسجيل الدخول."
         })
 
-        user_info = await websocket.receive_json()
-        print("👤 Received user info:", user_info)
+        login_info = await websocket.receive_json()
+        user_email = login_info.get("email", "").strip()
 
-        name = user_info.get("name", "").strip()
-        gender = user_info.get("gender", "").strip().lower()
-        profession = user_info.get("profession", "").strip() or None
+        user_data = await get_user_by_email(user_email)
+        if not user_data:
+            await websocket.send_json({
+                "type": "error",
+                "message": "المستخدم غير موجود. من فضلك سجل أولاً."
+            })
+            await websocket.close()
+            return
 
-        session.set_user_info(name, gender, profession)
+        # Step 2: Use user data from DB to set session
+        session.set_user_info(
+            name=user_data.get("name", ""),
+            gender=user_data.get("gender", "male"),
+            profession=user_data.get("profession", None),
+            likes = user_data.get("likes", []),
+            dislikes = user_data.get("dislikes", []),
+            allergies = user_data.get("allergies", [])
+        )
 
-        # Step 2: Main chat loop
+        session.user_email = user_email  # (optional for future reference)
+
+        # Step 3: Start the chat loop
         while True:
             user_message = await websocket.receive_text()
             print(f"\n📨 Incoming WebSocket message: {user_message}")
 
+            # Check for reset command
+            if user_message.strip() == "/new":
+                session = WebSocketBotSession()  # Reset session completely
+                session.set_user_info(
+                    name=user_data.get("name", ""),
+                    gender=user_data.get("gender", "male"),
+                    profession=user_data.get("profession", None),
+                    likes = user_data.get("likes", []),
+                    dislikes = user_data.get("dislikes", []),
+                    allergies = user_data.get("allergies", [])
+                )
+                session.user_email = user_email
+
+                await websocket.send_json({
+                    "type": "response",
+                    "message": "✅ تم بدء محادثة جديدة."
+                })
+                continue
+
             if session.expecting_choice:
-                # Expecting a number for recipe choice
                 try:
-                    selected_index = int(user_message.strip()) - 1  # User sees 1-based index
+                    selected_index = int(user_message.strip()) - 1
                     result = await session.handle_choice(selected_index)
                 except (ValueError, IndexError):
-                    print("❌ Invalid choice input.")
                     result = {
                         "type": "error",
                         "message": "من فضلك اختر رقم من الاختيارات الموجودة."
                     }
             else:
-                # Normal user input
                 result = await session.handle_message(user_message)
+
 
             await websocket.send_json(result)
             print("📤 Response sent to frontend.\n")
