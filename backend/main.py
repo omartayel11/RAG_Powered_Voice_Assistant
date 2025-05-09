@@ -25,7 +25,7 @@
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi import Request, HTTPException
-from utils import create_user, get_user_by_email, hash_password, verify_password
+from utils import create_user, get_user_by_email, hash_password, verify_password, add_recipe_to_favourites
 from fastapi.middleware.cors import CORSMiddleware
 from myChatBot import WebSocketBotSession
 
@@ -57,7 +57,8 @@ async def signup(request: Request):
         "profession": "",
         "allergies": [],
         "likes": [],
-        "dislikes": []
+        "dislikes": [],
+        "favorite_recipes": []
     }
 
     for key, default in optional_fields.items():
@@ -92,6 +93,19 @@ async def login(request: Request):
         "email": user["email"]
     }
 
+@app.post("/add-favourite")
+async def add_favourite(request: Request):
+    data = await request.json()
+    email = data.get("email")
+    title = data.get("title")
+    recipe = data.get("recipe")
+
+    if not all([email, title, recipe]):
+        raise HTTPException(status_code=400, detail="Missing data.")
+
+    result = await add_recipe_to_favourites(email, title, recipe)
+    return result
+
 @app.websocket("/ws/chat")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
@@ -125,7 +139,8 @@ async def websocket_endpoint(websocket: WebSocket):
             profession=user_data.get("profession", None),
             likes = user_data.get("likes", []),
             dislikes = user_data.get("dislikes", []),
-            allergies = user_data.get("allergies", [])
+            allergies = user_data.get("allergies", []),
+            favorite_recipes = user_data.get("favorite_recipes", []),
         )
 
         session.user_email = user_email  # (optional for future reference)
@@ -144,14 +159,16 @@ async def websocket_endpoint(websocket: WebSocket):
                     profession=user_data.get("profession", None),
                     likes = user_data.get("likes", []),
                     dislikes = user_data.get("dislikes", []),
-                    allergies = user_data.get("allergies", [])
+                    allergies = user_data.get("allergies", []),
+                    favorite_recipes = user_data.get("favorite_recipes", [])
                 )
                 session.user_email = user_email
 
                 await websocket.send_json({
-                    "type": "response",
-                    "message": "✅ تم بدء محادثة جديدة."
+                    "type": "reset",
+                    "message": "✅ تم بدء محادثة جديدة تمامًا."
                 })
+
                 continue
 
             if session.expecting_choice:

@@ -18,17 +18,17 @@ function Login() {
       navigate("/chat");
     } else {
       const err = await res.json();
-      alert("فشل تسجيل الدخول: " + err.detail);
+      alert("Unable to login " + err.detail);
     }
   };
 
   return (
     <div className="App">
-      <h2>🔐 تسجيل الدخول</h2>
+      <h2>Login</h2>
       <div className="form">
-        <input type="email" placeholder="البريد الإلكتروني" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="كلمة المرور" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <button onClick={handleLogin}>دخول</button>
+        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <button onClick={handleLogin}>login</button>
       </div>
     </div>
   );

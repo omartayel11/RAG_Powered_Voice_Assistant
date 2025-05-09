@@ -1343,3 +1343,457 @@
 [36mDEBUG[0m:    [23-04-2025 23:34:18] Stopping component OpenTelemetryClient
 [32mINFO[0m:     [23-04-2025 23:34:18] Application shutdown complete.
 [32mINFO[0m:     [23-04-2025 23:34:18] Finished server process [[36m22672[0m]
+[33mWARNING[0m:  [23-04-2025 23:48:14] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [23-04-2025 23:48:14] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component System
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component SqliteDB
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component Posthog
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component LocalExecutor
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component SegmentAPI
+[36mDEBUG[0m:    [23-04-2025 23:48:14] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [23-04-2025 23:48:14] Started server process [[36m5488[0m]
+[32mINFO[0m:     [23-04-2025 23:48:14] Waiting for application startup.
+[32mINFO[0m:     [23-04-2025 23:48:14] Application startup complete.
+[32mINFO[0m:     [23-04-2025 23:48:14] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [23-04-2025 23:51:40] ::1:49336 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:51:41] ::1:49337 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:51:41] ::1:49337 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:51:55] ::1:49347 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [23-04-2025 23:51:55] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [23-04-2025 23:51:55] ::1:49347 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:53:10] ::1:49387 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:53:11] ::1:49388 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:53:11] ::1:49388 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:53:11] ::1:49387 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:53:11] ::1:49387 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:56:14] ::1:49728 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:56:15] ::1:49729 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:56:15] ::1:49729 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:56:15] ::1:49728 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:56:15] ::1:49728 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:57:00] ::1:49751 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:57:01] ::1:49752 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:57:01] ::1:49752 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:57:01] ::1:49751 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [23-04-2025 23:57:01] ::1:49751 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 00:03:56] Shutting down
+[32mINFO[0m:     [24-04-2025 00:03:57] Waiting for application shutdown.
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component System
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component SegmentAPI
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component LocalExecutor
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component Posthog
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component SqliteDB
+[36mDEBUG[0m:    [24-04-2025 00:03:57] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [24-04-2025 00:03:57] Application shutdown complete.
+[32mINFO[0m:     [24-04-2025 00:03:57] Finished server process [[36m5488[0m]
+[33mWARNING[0m:  [24-04-2025 16:28:03] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [24-04-2025 16:28:03] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component System
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component SqliteDB
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component Posthog
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component LocalExecutor
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component SegmentAPI
+[36mDEBUG[0m:    [24-04-2025 16:28:03] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [24-04-2025 16:28:04] Started server process [[36m14048[0m]
+[32mINFO[0m:     [24-04-2025 16:28:04] Waiting for application startup.
+[32mINFO[0m:     [24-04-2025 16:28:04] Application startup complete.
+[32mINFO[0m:     [24-04-2025 16:28:04] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [24-04-2025 16:31:22] ::1:54632 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 16:31:23] ::1:54633 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 16:31:23] ::1:54633 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 16:31:43] ::1:54644 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [24-04-2025 16:31:43] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [24-04-2025 16:31:43] ::1:54644 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 16:54:57] ::1:55392 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 16:54:58] ::1:55393 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 16:54:58] ::1:55393 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 16:55:12] ::1:55401 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 16:55:12] ::1:55401 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:14:24] ::1:56054 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:14:25] ::1:56056 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:14:25] ::1:56056 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:14:35] ::1:56063 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:14:36] ::1:56063 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:18:40] ::1:56168 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:18:41] ::1:56170 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:18:41] ::1:56170 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:18:41] ::1:56168 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:18:42] ::1:56168 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:22:05] ::1:56252 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:22:05] ::1:56253 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:22:05] ::1:56253 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:22:05] ::1:56252 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:22:06] ::1:56252 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [24-04-2025 17:57:30] Shutting down
+[32mINFO[0m:     [24-04-2025 17:57:30] Waiting for application shutdown.
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component System
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component SegmentAPI
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component LocalExecutor
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component Posthog
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component SqliteDB
+[36mDEBUG[0m:    [24-04-2025 17:57:30] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [24-04-2025 17:57:30] Application shutdown complete.
+[32mINFO[0m:     [24-04-2025 17:57:30] Finished server process [[36m14048[0m]
+[33mWARNING[0m:  [24-04-2025 19:14:32] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [24-04-2025 19:14:33] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component System
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component SqliteDB
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component Posthog
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component LocalExecutor
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component SegmentAPI
+[36mDEBUG[0m:    [24-04-2025 19:14:33] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [24-04-2025 19:14:33] Started server process [[36m14176[0m]
+[32mINFO[0m:     [24-04-2025 19:14:33] Waiting for application startup.
+[32mINFO[0m:     [24-04-2025 19:14:33] Application startup complete.
+[32mINFO[0m:     [24-04-2025 19:14:33] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [25-04-2025 23:20:32] Shutting down
+[32mINFO[0m:     [25-04-2025 23:20:32] Waiting for application shutdown.
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component System
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component SegmentAPI
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component LocalExecutor
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component Posthog
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component SqliteDB
+[36mDEBUG[0m:    [25-04-2025 23:20:32] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [25-04-2025 23:20:32] Application shutdown complete.
+[32mINFO[0m:     [25-04-2025 23:20:32] Finished server process [[36m14176[0m]
+[33mWARNING[0m:  [25-04-2025 23:20:39] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [25-04-2025 23:20:40] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component System
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component SqliteDB
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component Posthog
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component LocalExecutor
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component SegmentAPI
+[36mDEBUG[0m:    [25-04-2025 23:20:40] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [25-04-2025 23:20:40] Started server process [[36m22776[0m]
+[32mINFO[0m:     [25-04-2025 23:20:40] Waiting for application startup.
+[32mINFO[0m:     [25-04-2025 23:20:40] Application startup complete.
+[32mINFO[0m:     [25-04-2025 23:20:40] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [25-04-2025 23:23:15] ::1:49940 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:23:16] ::1:49941 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:23:16] ::1:49941 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:23:31] ::1:49949 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [25-04-2025 23:23:32] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [25-04-2025 23:23:32] ::1:49949 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:32:07] ::1:50371 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:32:08] ::1:50373 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:32:08] ::1:50373 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:32:08] ::1:50371 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:32:08] ::1:50371 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:41:23] ::1:50644 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:41:24] ::1:50645 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:41:24] ::1:50645 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:41:46] ::1:50657 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:41:46] ::1:50657 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:44:13] ::1:50719 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:44:14] ::1:50721 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:44:14] ::1:50721 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:44:14] ::1:50719 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:44:15] ::1:50719 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:44:59] ::1:50861 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:45:00] ::1:50862 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:45:00] ::1:50862 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:45:00] ::1:50861 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [25-04-2025 23:45:00] ::1:50861 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:04:47] ::1:51552 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:04:47] ::1:51554 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:04:48] ::1:51554 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:05:07] ::1:51566 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:05:07] ::1:51566 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:36:01] ::1:52627 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:36:02] ::1:52629 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:36:02] ::1:52629 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:36:26] ::1:52640 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:36:27] ::1:52640 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:43:39] ::1:52834 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:43:40] ::1:52835 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:43:40] ::1:52835 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:43:41] ::1:52834 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 00:43:41] ::1:52834 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:12:32] ::1:53800 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:12:33] ::1:53802 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:12:33] ::1:53802 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:12:46] ::1:53809 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:12:47] ::1:53809 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:18:24] ::1:54088 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:18:24] ::1:54090 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:18:24] ::1:54090 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:18:37] ::1:54098 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:18:37] ::1:54098 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:23:07] ::1:54232 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:23:08] ::1:54233 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:23:08] ::1:54233 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:23:17] ::1:54241 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:23:17] ::1:54241 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:24:11] ::1:54264 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:24:11] ::1:54265 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:24:11] ::1:54265 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:24:12] ::1:54264 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:24:12] ::1:54264 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2025 01:29:43] Shutting down
+[32mINFO[0m:     [26-04-2025 01:29:44] Waiting for application shutdown.
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component System
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component SegmentAPI
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component LocalExecutor
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component Posthog
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component SqliteDB
+[36mDEBUG[0m:    [26-04-2025 01:29:44] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [26-04-2025 01:29:44] Application shutdown complete.
+[32mINFO[0m:     [26-04-2025 01:29:44] Finished server process [[36m22776[0m]
+[33mWARNING[0m:  [27-04-2025 05:59:10] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [27-04-2025 05:59:10] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component System
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component Posthog
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component LocalExecutor
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component SegmentAPI
+[36mDEBUG[0m:    [27-04-2025 05:59:10] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [27-04-2025 05:59:10] Started server process [[36m22492[0m]
+[32mINFO[0m:     [27-04-2025 05:59:10] Waiting for application startup.
+[32mINFO[0m:     [27-04-2025 05:59:10] Application startup complete.
+[32mINFO[0m:     [27-04-2025 05:59:10] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [27-04-2025 06:15:02] ::1:64782 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:15:03] ::1:64783 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:15:03] ::1:64783 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:15:19] ::1:64792 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2025 06:15:20] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [27-04-2025 06:15:20] ::1:64792 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:24:25] ::1:65117 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:24:26] ::1:65119 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:24:26] ::1:65119 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:24:40] ::1:65127 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:24:40] ::1:65127 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:48:48] ::1:49965 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:48:49] ::1:49966 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:48:49] ::1:49966 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:49:02] ::1:49974 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:49:02] ::1:49974 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:56:51] ::1:50266 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:56:52] ::1:50267 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:56:52] ::1:50267 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:57:06] ::1:50278 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:57:06] ::1:50278 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 06:59:43] Shutting down
+[32mINFO[0m:     [27-04-2025 06:59:43] Waiting for application shutdown.
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component System
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component SegmentAPI
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component LocalExecutor
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component Posthog
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component SqliteDB
+[36mDEBUG[0m:    [27-04-2025 06:59:43] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [27-04-2025 06:59:43] Application shutdown complete.
+[32mINFO[0m:     [27-04-2025 06:59:43] Finished server process [[36m22492[0m]
+[33mWARNING[0m:  [27-04-2025 14:57:05] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [27-04-2025 14:57:05] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component System
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component Posthog
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component LocalExecutor
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component SegmentAPI
+[36mDEBUG[0m:    [27-04-2025 14:57:05] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [27-04-2025 14:57:05] Started server process [[36m7624[0m]
+[32mINFO[0m:     [27-04-2025 14:57:05] Waiting for application startup.
+[32mINFO[0m:     [27-04-2025 14:57:05] Application startup complete.
+[32mINFO[0m:     [27-04-2025 14:57:05] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [27-04-2025 15:23:54] Shutting down
+[32mINFO[0m:     [27-04-2025 15:23:54] Waiting for application shutdown.
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component System
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component SegmentAPI
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component LocalExecutor
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component Posthog
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component SqliteDB
+[36mDEBUG[0m:    [27-04-2025 15:23:54] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [27-04-2025 15:23:54] Application shutdown complete.
+[32mINFO[0m:     [27-04-2025 15:23:54] Finished server process [[36m7624[0m]
+[33mWARNING[0m:  [27-04-2025 15:23:59] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [27-04-2025 15:23:59] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component System
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component Posthog
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component LocalExecutor
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component SegmentAPI
+[36mDEBUG[0m:    [27-04-2025 15:23:59] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [27-04-2025 15:23:59] Started server process [[36m13972[0m]
+[32mINFO[0m:     [27-04-2025 15:23:59] Waiting for application startup.
+[32mINFO[0m:     [27-04-2025 15:23:59] Application startup complete.
+[32mINFO[0m:     [27-04-2025 15:23:59] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [27-04-2025 15:26:40] ::1:52234 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 15:26:41] ::1:52235 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 15:26:41] ::1:52235 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 15:26:57] ::1:52243 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2025 15:26:57] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [27-04-2025 15:26:57] ::1:52243 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2025 17:15:19] Shutting down
+[32mINFO[0m:     [27-04-2025 17:15:19] Waiting for application shutdown.
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component System
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component SegmentAPI
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component LocalExecutor
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component Posthog
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component SqliteDB
+[36mDEBUG[0m:    [27-04-2025 17:15:19] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [27-04-2025 17:15:19] Application shutdown complete.
+[32mINFO[0m:     [27-04-2025 17:15:19] Finished server process [[36m13972[0m]
+[33mWARNING[0m:  [03-05-2025 21:41:08] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [03-05-2025 21:41:10] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component System
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component SqliteDB
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component Posthog
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component LocalExecutor
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component SegmentAPI
+[36mDEBUG[0m:    [03-05-2025 21:41:10] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [03-05-2025 21:41:10] Started server process [[36m28716[0m]
+[32mINFO[0m:     [03-05-2025 21:41:10] Waiting for application startup.
+[32mINFO[0m:     [03-05-2025 21:41:10] Application startup complete.
+[32mINFO[0m:     [03-05-2025 21:41:10] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [03-05-2025 21:51:30] ::1:50974 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 21:51:31] ::1:50975 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 21:51:31] ::1:50975 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 21:52:04] ::1:50990 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [03-05-2025 21:52:05] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [03-05-2025 21:52:05] ::1:50990 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 21:53:01] ::1:51016 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 21:53:01] ::1:51017 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 21:53:01] ::1:51017 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 21:53:02] ::1:51016 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 21:53:02] ::1:51016 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:07:58] ::1:54016 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:07:58] ::1:54017 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:07:58] ::1:54017 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:08:05] ::1:54024 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:08:05] ::1:54024 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:21:28] ::1:54610 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:21:29] ::1:54611 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:21:29] ::1:54611 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:21:36] ::1:54617 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:21:36] ::1:54617 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:34:07] ::1:55206 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:34:08] ::1:55207 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:34:08] ::1:55207 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:34:24] ::1:55215 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:34:24] ::1:55215 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:35:51] ::1:55250 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:35:52] ::1:55251 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:35:52] ::1:55251 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:35:52] ::1:55250 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:35:52] ::1:55250 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:37:00] ::1:55282 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:37:01] ::1:55284 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:37:01] ::1:55284 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:37:01] ::1:55282 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:37:01] ::1:55282 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [03-05-2025 23:40:06] Shutting down
+[32mINFO[0m:     [03-05-2025 23:40:06] Waiting for application shutdown.
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component System
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component SegmentAPI
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component LocalExecutor
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component Posthog
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component SqliteDB
+[36mDEBUG[0m:    [03-05-2025 23:40:06] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [03-05-2025 23:40:06] Application shutdown complete.
+[32mINFO[0m:     [03-05-2025 23:40:06] Finished server process [[36m28716[0m]
+[33mWARNING[0m:  [04-05-2025 15:47:58] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [04-05-2025 15:47:59] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component System
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component SqliteDB
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component Posthog
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component LocalExecutor
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component SegmentAPI
+[36mDEBUG[0m:    [04-05-2025 15:47:59] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [04-05-2025 15:47:59] Started server process [[36m28284[0m]
+[32mINFO[0m:     [04-05-2025 15:47:59] Waiting for application startup.
+[32mINFO[0m:     [04-05-2025 15:47:59] Application startup complete.
+[32mINFO[0m:     [04-05-2025 15:47:59] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [04-05-2025 15:54:52] ::1:57548 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [04-05-2025 15:54:53] ::1:57549 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [04-05-2025 15:54:53] ::1:57549 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [04-05-2025 15:55:06] ::1:57557 - "GET /api/v2/tenants/default_tenant/databases/default_database/collections/recipestest HTTP/1.1" 200
+[36mDEBUG[0m:    [04-05-2025 15:55:07] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [04-05-2025 15:55:07] ::1:57557 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/d0826043-9fb1-4989-aa42-1c929ec16d17/query HTTP/1.1" 200
+[32mINFO[0m:     [04-05-2025 16:27:23] Shutting down
+[32mINFO[0m:     [04-05-2025 16:27:23] Waiting for application shutdown.
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component System
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component SegmentAPI
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component LocalExecutor
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component Posthog
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component SqliteDB
+[36mDEBUG[0m:    [04-05-2025 16:27:23] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [04-05-2025 16:27:23] Application shutdown complete.
+[32mINFO[0m:     [04-05-2025 16:27:23] Finished server process [[36m28284[0m]

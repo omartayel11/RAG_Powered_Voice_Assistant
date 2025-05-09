@@ -33,30 +33,30 @@ function Signup() {
     });
 
     if (res.ok) {
-      alert("تم التسجيل بنجاح! سجل الدخول الآن.");
+      alert("Successfuly registered!!!");
       navigate("/login");
     } else {
       const err = await res.json();
-      alert("فشل التسجيل: " + err.detail);
+      alert("Unable to Signup" + err.detail);
     }
   };
 
   return (
     <div className="App">
-      <h2>📋 إنشاء حساب جديد</h2>
+      <h2>Signup</h2>
       <div className="form">
-        <input name="email" type="email" placeholder="البريد الإلكتروني" onChange={handleChange} />
-        <input name="password" type="password" placeholder="كلمة المرور" onChange={handleChange} />
-        <input name="name" placeholder="الاسم (اختياري)" onChange={handleChange} />
+        <input name="email" type="email" placeholder="Email" onChange={handleChange} />
+        <input name="password" type="password" placeholder="Password" onChange={handleChange} />
+        <input name="name" placeholder="First Name (optional)" onChange={handleChange} />
         <select name="gender" value={form.gender} onChange={handleChange}>
-          <option value="male">ذكر</option>
-          <option value="female">أنثى</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
         </select>
-        <input name="profession" placeholder="المهنة (اختياري)" onChange={handleChange} />
-        <input name="likes" placeholder="الأكلات المفضلة (مفصولة بفاصلة)" onChange={handleChange} />
-        <input name="dislikes" placeholder="الأكلات غير المفضلة" onChange={handleChange} />
-        <input name="allergies" placeholder="الحساسيات (مثلاً: بصل، لبن)" onChange={handleChange} />
-        <button onClick={handleSignup}>تسجيل</button>
+        <input name="profession" placeholder="Profession (optional)" onChange={handleChange} />
+        <input name="likes" placeholder="Likes" onChange={handleChange} />
+        <input name="dislikes" placeholder="Dislikes" onChange={handleChange} />
+        <input name="allergies" placeholder="Allergies (EX: Onions, Milk)" onChange={handleChange} />
+        <button onClick={handleSignup}>signup</button>
       </div>
     </div>
   );
